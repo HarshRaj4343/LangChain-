@@ -1,24 +1,24 @@
 # STATIC PROMPT UI
 
-# from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
-# from dotenv import load_dotenv
-# import streamlit as st
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+from dotenv import load_dotenv
+import streamlit as st
 
-# load_dotenv()
+load_dotenv()
 
-# llm = HuggingFaceEndpoint(
-#     repo_id="meta-llama/Llama-3.1-8B-Instruct",
-#     task="conversational"
-# )
+llm = HuggingFaceEndpoint(
+    repo_id="meta-llama/Llama-3.1-8B-Instruct",
+    task="conversational"
+)
 
-# model = ChatHuggingFace(llm=llm)
+model = ChatHuggingFace(llm=llm)
 
 
-# st.header("Research Assistant")
-# user_input = st.text_input("Enter your research question:")
-# if st.button('Summarise'):
-#     result = model.invoke(user_input)
-#     st.write(result.content)
+st.header("Research Assistant")
+user_input = st.text_input("Enter your research question:")
+if st.button('Summarise'):
+    result = model.invoke(user_input)
+    st.write(result.content)
 
 
 # DYNAMIC PROMPT UI
