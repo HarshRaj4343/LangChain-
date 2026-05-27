@@ -1,4 +1,4 @@
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 
@@ -30,4 +30,3 @@ results = retriever.invoke(query)
 for i, doc in enumerate(results):
     print(f"\n--- Result {i+1} ---")
     print(doc.page_content)
-

@@ -1,7 +1,8 @@
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from langchain_classic.retrievers.multi_query import MultiQueryRetriever
+from langchain_openai import ChatOpenAI
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 # Relevant health & wellness documents
 all_docs = [
