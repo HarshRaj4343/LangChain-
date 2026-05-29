@@ -46,7 +46,9 @@ langchain-community
 langchain-core 
 requests
 duckduckgo-search
-langchain pip
+langchain 
 langchain-core 
 langchain-community 
 langgraph
+langchainhub
+langchain-groq
