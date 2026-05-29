@@ -38,3 +38,15 @@ langchain-community
 pydantic 
 duckduckgo-search 
 langchain_experimental
+langchain-openai 
+langchain-core 
+requests
+langchain-openai 
+langchain-community 
+langchain-core 
+requests
+duckduckgo-search
+langchain pip
+langchain-core 
+langchain-community 
+langgraph
